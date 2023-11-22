@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Strona internetowa firmy Spaw-Mar, oferująca usługi spawania, cięcie laserem, gięcie blach, spawanie metodą TIG MIG/MAG, spawanie laserowe, obróbka skrawaniem, walcowanie, malowanie proszkowe, cynkowanie oraz gięcie profili i rur.">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="content-language" content="pl">
+    <meta name="rating" content="general">
+    <title>Spaw-Mar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <!-- <link href="./assets/css/locomotive-scroll.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <div class="container-fluid text-center "> <!-- Główny container -->
+      <header> <!-- Header dla semantyki -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top"> <!-- Początek nawigacji-->
+        <div class="container-fluid" id="nav-container">
+            <a class="navbar-brand ms-lg-5" href="#">
+            <img id="logo-png" src="./media/logo/logo2.png" alt="Logo">
+        </a>
+          <button id="toggle-button" class="navbar-toggler me-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link me-lg-5" href="#">O nas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link me-lg-5" href="#">
+                  Usługi
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link me-lg-5" href="#">Realizacje</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-5" href="#">Kontakt</a>
+            </li>
+              </ul>
+          </div>
+        </div>
+      </nav> <!-- Koniec navbar-->
+      </header>
+<main> <!-- Main dla semantyki-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"> <!-- Karuzela-->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000000000">
+          <img src="./media/img/carousel-5.jpg" class="img-fluid-v2" alt="...">
+          <div class="carousel-caption d-md-block text-start" id="caption">
+            <h1 id="carousel-brand">SPAW-MAR</h1>
+            <p style="margin-bottom: 40px; font-size: 1.3rem; text-shadow: 2px 2px black;">Od spawania po malowanie proszkowe</p>
+            <a id="main-a" href="#">
+              <span class="main-span">Poznajmy się bliżej</span>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000000000">
+          <img src="./media/img/carousel-5.jpg" class="img-fluid-v2" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5>Podpis</h5>
+            <p>Coś tam</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000000000">
+          <img src="./media/img/carousel-5.jpg" class="img-fluid-v2" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5>Podpis</h5>
+            <p>Coś tam</p>
+          </div>
+        </div>
+        <span class="vertical-span">Znajdziesz nas tutaj</span>
+      </div>
+      <!-- strzalki przesuwania-
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> Koniec strzalek przesuwania-->
+    </div> <!-- Koniec karuzeli -->
+<article> <!-- krótka sekcja o nas -->
+  <div class="row" id="index-row-1"> 
+    <p style="padding: 20px; font-size: 3rem; background: orange; margin-top: 5%;">Dumni z naszej historii</p>
+    <div class="col-12 col-lg-5 offset-lg-2 my-lg-5">
+      <div class="about-img-holder">
+        <img class="about-img w-100" src="./media/img/carousel-4.jpg">
+      </div>
+    </div>
+    <div class="col-12 col-lg-5 my-lg-5 join-about-div">
+      <div class="text-holder">
+        <div class="index-about-us">
+      <h1 id="h1-about">100 lat doświadczenia</h1>
+      <h4 id="h4-about">Jesteśmy firmą Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis suscipit auctor felis. Nunc a ni</h3>
+    </div>
+  </div>
+  </div>
+
+  </div> <!-- koniec row-->
+</article> <!-- koniec sekcji o nas-->
+
+<article> <!-- krótka sekcja o nas 2-->
+<div class="row" id="index-row-2">
+<div class="col-12 col-lg-8 offset-lg-2 my-lg-5">
+<div class="text-holder">
+  <div class="index-about-us">
+    <h1 id="h1-about-2">SPAW-MAR w liczbach</h1>
+    <div class="row">
+      <div class="col-12">
+        Tutaj dorobimy jakieś ikonki albo krótki opis czy coś + to niżej
+      </div>
+      <section id="demos" style="opacity: 1; transform: translate(0px, 0px);"></section>
+      <section id="fast-facts" style="opacity: 1; transform: translate(0px, 0px);">
+          <div class="row mt-5">
+            <div class="col-12 col-sm-4">
+              <h1 class="animCounter">110000</h1>
+              <div class="divider divider-orchid mb-2"></div>
+              <span class="super-lead-text">Tyle ton stali gniemy rocznie</span>
+            </div>
+            <div class="col-12 col-sm-4">
+              <h1 class="animCounter">1000</h1>
+              <div class="divider divider-orchid mb-2"></div>
+              <span class="super-lead-text">Tylu mamy pracowników</span>
+            </div>
+            <div class="col-12 col-sm-4">
+              <h1 class="animCounter">60</h1>
+              <div class="divider divider-orchid mb-2"></div>
+              <span class="super-lead-text">Tyle lat na rynku</span>
+            </div>
+          </div>
+      </section>
+    </section>
+  </div>
+  </div>
+</div>
+</div>
+
+
+</div><!-- koniec row-->
+
+</article> <!-- koniec sekcji o nas 2-->
+
+<article> <!-- krótka sekcja usługi -->
+<div class="row text-center" id="index-row-3" style="width: 90%; margin: auto;"> <!-- row-->
+  <p class="mt-lg-3" style="margin-bottom: 0px; font-size: 3rem; background: orange;">W czym się specjalizujemy?</p>
+<div class="col-12 col-lg-3 text-center services-card-height mt-5 mt-lg-3">
+  <div class="cardCont">
+    <div class="cardBack" id="card1">
+      <p class="card-back">Posiadamy nowoczesne maszyny do cięcia laserowego ... ...</p>
+    </div>
+    <div class="cardFront" id="cardImg1">
+      <p class="card-brand">Cięcie laserem</p>
+    </div>
+  </div>  
+  
+</div>
+<div class="col-12 col-lg-3 text-center services-card-height mt-5 mt-lg-3">
+  <div class="cardCont">
+    <div class="cardBack" id="card1">
+      <span>Coś tam</span>
+    </div>
+    <div class="cardFront" id="card2">
+      <span>Gięcie blach</span>
+    </div>
+  </div>  
+  
+</div>
+<div class="col-12 col-lg-3 text-center services-card-height mt-5 mt-lg-3">
+  <div class="cardCont">
+    <div class="cardBack" id="card1">
+      <span>Coś tam</span>
+    </div>
+    <div class="cardFront" id="card2">
+      <span>Spawanie metodą MIG/MAG</span>
+    </div>
+  </div>  
+  
+</div>
+<div class="col-12 col-lg-3 text-center services-card-height mt-5 mt-lg-3">
+  <div class="cardCont">
+    <div class="cardBack" id="card1">
+      <span>Coś tam</span>
+    </div>
+    <div class="cardFront" id="card2">
+      <span>Obróbka skrawaniem</span>
+    </div>
+  </div>  
+
+  
+  
+</div>
+</div> <!-- koniec row-->
+
+<div class="row text-center" id="index-row-4" style="width: 90%; margin: auto;"> <!-- row -->
+
+  <div class="col-12 col-lg-3 text-center services-card-height mt-5 mt-lg-3">
+    <div class="cardCont">
+      <div class="cardBack" id="card1">
+        <span>Coś tam</span>
+      </div>
+      <div class="cardFront" id="card2">
+        <p class="card-brand">Walcowanie</p>
+      </div>
+    </div>  
+  
+    
+    
+  </div>
+  <div class="col-12 col-lg-3 text-center services-card-height mt-5 mt-lg-3">
+    <div class="cardCont">
+      <div class="cardBack" id="card1">
+        <span>Coś tam</span>
+      </div>
+      <div class="cardFront" id="card2">
+        <span>Malowanie proszkowe</span>
+      </div>
+    </div>  
+  
+    
+    
+  </div>
+  <div class="col-12 col-lg-3 text-center services-card-height mt-5 mt-lg-3">
+    <div class="cardCont">
+      <div class="cardBack" id="card1">
+        <span>Coś tam</span>
+      </div>
+      <div class="cardFront" id="card2">
+        <span>Cynkowanie</span>
+      </div>
+    </div>  
+  
+    
+    
+  </div>
+  <div class="col-12 col-lg-3 text-center services-card-height mt-5 mt-lg-3">
+    <div class="cardCont">
+      <div class="cardBack" id="card1">
+        <span>Coś tam</span>
+      </div>
+      <div class="cardFront" id="card2">
+        <span>Gięcie profili i rur</span>
+      </div>
+    </div>  
+    
+    
+  </div>
+
+</div> <!-- koniec row-->
+</article> <!-- koniec sekcji usługi-->
+<article> <!-- początek sekcji realizacji -->
+  <div class="row px-5 my-3"> <!-- początek row-->
+    <p class="mt-lg-3" style="margin-bottom: 0px; font-size: 3rem; background: orange;">Sprawdź nasze realizacje</p>
+<div class="col-6 col-lg-4 my-3">
+  <a data-fslightbox="gallery" href="./media/img/carousel-4.jpg">
+    <img class="w-100" src="./media/img/carousel-4.jpg">
+  </a>
+  </div>
+  <div class="col-6 col-lg-4 my-3">
+    <a data-fslightbox="gallery" href="./media/img/carousel-4.jpg">
+      <img class="w-100" src="./media/img/carousel-4.jpg">
+    </a>
+    </div>
+    <div class="col-6 col-lg-4 my-3">
+      <a data-fslightbox="gallery" href="./media/img/carousel-4.jpg">
+        <img class="w-100" src="./media/img/carousel-4.jpg">
+      </a>
+      </div>
+      <div class="col-6 col-lg-4 my-3">
+        <a data-fslightbox="gallery" href="./media/img/carousel-4.jpg">
+          <img class="w-100" src="./media/img/carousel-4.jpg">
+        </a>
+        </div>
+        <div class="col-6 col-lg-4 my-3">
+          <a data-fslightbox="gallery" href="./media/img/carousel-4.jpg">
+            <img class="w-100" src="./media/img/carousel-4.jpg">
+          </a>
+          </div>
+          <div class="col-6 col-lg-4 my-3">
+            <a data-fslightbox="gallery" href="./media/img/carousel-4.jpg">
+              <img class="w-100" src="./media/img/carousel-4.jpg">
+            </a>
+            </div>
+</div> <!-- koniec row-->
+</article> <!-- koniec sekcji realizacji-->
+
+<footer> <!-- Początek footer-->
+<div class="row"> <!-- Początek row footer-->
+<div class="col-12 col-lg-4 mt-5">
+  <img src="./media/logo/logo2.png">
+  <p class="mt-3">Firma o profilu X</p>
+</div>
+<div class="col-12 col-lg-4 pt-5">
+  <p class="pFooterBrand">Nawigacja</p>
+  <p>O nas</p>
+  <p>Usługi</p>
+  <p>Realizacje</p>
+  <p>Kontakt</p>
+</div>
+<div class="col-12 col-lg-4 pt-5">
+  <p class="pFooterBrand">Kontakt</p>
+  <p>Adres</p>
+  <p>Mail</p>
+  <p>Telefon</p>
+</div>
+<div class="col-12 pt-3" style="border-top: 1px solid gray">
+  <p class="pFooterCopy">
+    Copyright © 2023 Spaw-Mar
+  </p>
+</div>
+
+</div> <!-- koniec row footer-->
+</footer> <!-- koniec footer-->
+    
+    </main> <!-- Koniec main-->
+    </div> <!-- Koniec główny container-->
+
+
+    <!-- Skrypty -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EaselPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/anim.js"></script>
+    <script src="./assets/js/lightbox.js"></script>
+    <!-- <script src="./assets/js/locomotive-scroll.min.js"></script>
+ <script src="./assets/js/locomotive-init.js"></script> -->
+<script>
+
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
