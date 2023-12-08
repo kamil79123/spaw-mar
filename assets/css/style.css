@@ -526,15 +526,13 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
     justify-content: center;
 }
 .card-brand { /* styl tekstu na przodu obracanej karty */
-    margin-top: 40%;
     color: white;
-    font-size: 2rem;
-    text-shadow: 4px 2px black;
+    font-size: 1.4rem;
+    text-shadow: 5px 4px 3px black;
 }
 .card-back { /* styl tekstu z tylu obracanej karty */
-    margin-top: 40%;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 
@@ -544,6 +542,42 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
 #cardImg1 {
     background: url('../../media/img/laser-cut.jpg');
     background-size: cover;
+    border: 2px solid black;
+}
+#cardImg2 {
+    background: url('../../media/img/bending-metal.jpg');
+    background-size: cover;
+    border: 2px solid black;
+}
+#cardImg3 {
+    background: url('../../media/img/mig-mag.jpg');
+    background-size: cover;
+    border: 2px solid black;
+}
+#cardImg4 {
+    background: url('../../media/img/machining.jpg');
+    background-size: cover;
+    border: 2px solid black;
+}
+#cardImg5 {
+    background: url('../../media/img/rolling.jpg');
+    background-size: cover;
+    border: 2px solid black;
+}
+#cardImg6 {
+    background: url('../../media/img/powder-coating.jpeg');
+    background-size: cover;
+    border: 2px solid black;
+}
+#cardImg7 {
+    background: url('../../media/img/hot-dip.jpg');
+    background-size: cover;
+    border: 2px solid black;
+}
+#cardImg8 {
+    background: url('../../media/img/pipe-bending.jpg');
+    background-size: cover;
+    border: 2px solid black;
 }
 .cardCont
 {
@@ -563,16 +597,15 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
+  display: flex;
+      align-items: center;
+      justify-content: center;
 }
-#card1 {
-    background: url('../../media/img/opoy7.jpg');
-    background-size: cover;
+.cardBack {
+    background: rgba(0, 0, 0, 0.9);
+    padding-left: 5%;
+    padding-right: 5%;
 }
-#card2 {
-    background: yellow;
-}
-
-
 
 .background {
     position: absolute;
@@ -586,10 +619,11 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
 footer {
     background: black;
     color: white;
+    font-size: 0.8rem;
 }
 .pFooterBrand { /* tytuły footer */
 font-weight: bold;
-font-size: 2rem;
+font-size: 1rem;
 }
 
 
