@@ -13,6 +13,7 @@
     box-sizing: border-box;
 }
 body {
+    background: #e6dce8;
     font-family: 'czcionka', sans-serif;
     width: 100vw !important;
     min-height: 100vh;
@@ -333,20 +334,21 @@ height: 100vh !important;
 }
 }
 .main-span { /* przycisk poznajmy się bliżej */
-	box-shadow: 5px 6px 6px 0px rgba(170, 91, 2, 0.8);
-	background: rgba(255, 136, 0, 0.8);
+    box-shadow: 0px 0px 50px 0px rgba(64, 124, 147, 0.9);
+	background: rgba(64, 124, 147, 0.9);
 	border-radius:5px;
-	border:1px solid rgba(255, 136, 0, 0.8);
 	cursor:pointer;
 	color:#ffffff;
 	font-size:17px;
 	font-weight:bold;
 	padding:20px 34px;
 	text-shadow:0px 1px 1px #000000;
+    transition: 0.7s all ease-out;
 }
 .main-span:hover {
-    background-color: rgba(255, 136, 0, 1);
-    transition: 1s all ease-out;
+    box-shadow: 0px 0px 50px 0px rgba(103, 45, 82, 1);
+    background-color: rgba(103, 45, 82, 1);
+    transition: 0.7s all ease-out;
 }
 #carousel-brand { /*podpis h1 */
     text-shadow: 3px 3px black;
@@ -355,8 +357,9 @@ height: 100vh !important;
 .vertical-span {
     display: inline-block;
     transform: rotate(270deg);
-     right: -2.5%;
-     background-color: rgba(255, 255, 255, 0.185);
+     right: -3.5%;
+     background-color: rgba(103, 45, 82, 0.6);
+     border-radius: 5px;
      padding: 10px;
      position: absolute;
      color: white;
@@ -459,7 +462,7 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
 .counter-div:hover {
         border-color: #407c93;
         background-image: 
-        linear-gradient(to top, #407c934 51%, transparent 50%);
+        linear-gradient(to top, #407c93 51%, transparent 50%);
         background-position: 0 100%;
         -webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
         -moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
@@ -467,6 +470,60 @@ transition: background-position 300ms, color 300ms ease, border-color 300ms ease
         -o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
         transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
         cursor: pointer;
+}
+.counter-div2 {
+    border: 1px solid white;
+    height: calc(10vw + 10vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 200% 200%;
+background-image: 
+linear-gradient(to top, #2d5e67 50%, transparent 50%);
+-webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+-moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+-ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+-o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+}
+.counter-div2:hover {
+    border-color: #2d5e67;
+    background-image: 
+    linear-gradient(to top, #2d5e67 51%, transparent 50%);
+    background-position: 0 100%;
+    -webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    -moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    -ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    -o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    cursor: pointer;
+}
+.counter-div3 {
+    border: 1px solid white;
+    height: calc(10vw + 10vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 200% 200%;
+background-image: 
+linear-gradient(to top, #934075 50%, transparent 50%);
+-webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+-moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+-ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+-o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+}
+.counter-div3:hover {
+    border-color: #934075;
+    background-image: 
+    linear-gradient(to top, #934075 51%, transparent 50%);
+    background-position: 0 100%;
+    -webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    -moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    -ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    -o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+    cursor: pointer;
 }
 .index-about-us {
     /*background-color: rgba(211, 211, 211, 0.39); tego kolorku chyba nie użyjemy */
