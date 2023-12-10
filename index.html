@@ -93,32 +93,49 @@
       </button> Koniec strzalek przesuwania-->
     </div> <!-- Koniec karuzeli -->
 <article style="background: #e6dce8"> <!-- krótka sekcja o nas -->
-  <div class="row pt-lg-5" id="index-row-1"> 
-    <div class="col-12 col-lg-5 offset-lg-2 my-lg-5">
+  <div class="row pt-lg-5" id="index-row-1">
+    <div class="col-12 col-lg-5 offset-lg-2 my-lg-5 d-none d-lg-block">
       <div class="about-img-holder">
         <img class="about-img w-100" src="./media/img/carousel-4.jpg">
       </div>
     </div>
-    <div class="col-5 mb-lg-2 text-start ps-4">
-      <div class="row dp-row" style="width: 100%;">
-        <div class="col-8 px-0" style="width: auto; height: 150px"><span class="dp-years">25</span></div>
-        <div class="col-4 px-0 mt-lg-5">
-          <div class="row">
-            <div class="col-12"><span class="dp-years-2">lat</span></div>
+    <div class="col-12 col-lg-5 mb-lg-2 text-center text-lg-start ps-4">
+      <!-- sekcja 25 lat dla pc -->
+      <div class="row dp-row d-none d-lg-flex">
+        <div class="col-8 px-0 dp-years-wrap" style="height: 150px"><span class="dp-years">25</span></div>
+        <div class="col-4 px-0 mt-5 mt-lg-5">
+          <div class="row lg-text-center">
+            <div class="col-12"><span class="dp-years-2 dp-years-color">lat</span></div>
             <div class="col-6"><span class="dp-years-2">doświadczenia</span></div>
           </div>
           </div>
           <div class="" style="padding-bottom: 10px; border-bottom: 3px solid black;"></div>
       </div>
       <!-- <h1 class="h1-proud"><span style="font-size: 30px">25</span>lat doświadczenia</h1> -->
+      <!-- sekcja 25 lat dla mobile-->
+      <div class="row d-flex d-lg-none row-dp-years-mobile">
+        <div class="col-4 offset-4 px-0" style="width: auto;">
+          <p style="font-size: 7rem">25</p>
+        </div>
+        <div class="col-4 px-0">
+          <div class="row">
+            <div class="col-12 text-start">
+              lat
+            </div>
+            <div class="col-6">
+              doświadczenia
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     </div>
     <div class="row">
-    <div class="col-12 col-lg-5 my-lg-5 join-about-div">
+    <div class="col-12 px-0 col-lg-5 my-lg-5 join-about-div">
       <div class="text-holder">
         <div class="index-about-us">
           <h2 class="pt-4">Z miłości do stali</h2>
-      <h4 id="h4-about">Firma <b style="color: #934075">SPAW-MAR</b> specjalizująca się w spawaniu oferuje wysokiej jakości usługi z zakresu łączenia różnorodnych materiałów, od metalu po aluminium, dostosowując się do indywidualnych potrzeb klientów. Wykorzystuje nowoczesne technologie spawalnicze oraz doświadczenie wykwalifikowanych spawaczy, zapewniając solidność i precyzję w każdym projekcie. Dzięki profesjonalnemu podejściu do spawania firma zdobywa zaufanie klientów i utrzymuje wysoki standard w branży.
+      <h4 class="px-4 px-lg-5" id="h4-about">Firma <b style="color: #938540">SPAW-MAR</b> specjalizująca się w spawaniu oferuje wysokiej jakości usługi z zakresu łączenia różnorodnych materiałów, od metalu po aluminium, dostosowując się do indywidualnych potrzeb klientów. Wykorzystuje nowoczesne technologie spawalnicze oraz doświadczenie wykwalifikowanych spawaczy, zapewniając solidność i precyzję w każdym projekcie. Dzięki profesjonalnemu podejściu do spawania firma zdobywa zaufanie klientów i utrzymuje wysoki standard w branży.
         <div class="row mt-lg-4">
           <div class="col-4">
             <img class="about-icons" src="./media/icons/clock.png">
@@ -153,7 +170,7 @@
 <div class="col-12 col-lg-5 offset-lg-1 my-lg-5">
 <div class="text-holder">
   <div class="">
-    <h1 id="h1-about-2">SPAW-MAR w liczbach</h1>
+    <h1 id="h1-about-2"><span style="color: #938540; text-shadow: 2px 1px 5px #938540; font-size: 3rem;">SPAW-MAR</span> w liczbach</h1>
     <div class="row">
       <div class="col-12">
         Staramy się konsekwentnie przekraczać oczekiwania klientów i tworzyć innowacyjne rozwiązania odpowiadające na każdą potrzebę. Nadążanie za nowymi trendami i wymaganiami rynku, łącząc jednocześnie naszą wiedzę techniczną i artystyczną.
@@ -162,30 +179,33 @@
       <section id="fast-facts" style="opacity: 1; transform: translate(0px, 0px);">
           <div class="row mt-5">
             <div class="col-12 col-sm-4">
-              <div class="col-12 counter-div">
+              <div class="col-12 counter-div px-2">
                 <div class="col-12">
-                <h1 class="animCounter">1100</h1><div class="divider divider-orchid mb-2"></div>
+                <h2 class="animCounter">1100</h2><div class="divider divider-orchid mb-2"></div>
             <span class="super-lead-text">Zadowolonych klientów</span>
           </div>
           </div>
             </div>
             <div class="col-12 col-sm-4">
-              <div class="col-12 counter-div2">
+              <div class="col-12 counter-div2 px-2">
               <div class="col-12">
-                <h1 class="animCounter">1000</h1>
+                <h2 class="animCounter">1000</h2>
                 <div class="divider divider-orchid mb-2"></div>
                 <span class="super-lead-text">Liczba pracowników</span>
               </div>
             </div>
             </div>
             <div class="col-12 col-sm-4">
-              <div class="col-12 counter-div3">
+              <div class="col-12 counter-div3 px-2">
               <div class="col-12">
-                <h1 class="animCounter">60</h1>
+                <h2 class="animCounter">60</h2>
                 <div class="divider divider-orchid mb-2"></div>
                 <span class="super-lead-text">Ukończonych projektów</span>
               </div>
             </div>
+            </div>
+            <div class="col-12 mt-lg-5">
+              <hr style="width: 100%; border: 1px solid #938540; opacity: 1; color: #938540">
             </div>
           </div>
       </section>
@@ -205,7 +225,8 @@
 <article style="background: #e6dce8"> <!-- krótka sekcja usługi -->
 <div class="row text-center" id="index-row-3" style="width: 90%; margin: auto;"> <!-- row-->
   <div class="col-12 mt-lg-5 mb-lg-2">
-  <h1 class="" style="font-size: 3rem;">W czym się specjalizujemy?</h1>
+  <h1 class="" style="font-size: 2.5rem;">NASZA OFERTA</h1>
+  <hr style="margin: auto; width: 60%; border-bottom: 2px solid #938540; color: #938540; opacity: 1;">
   </div>
 <div class="col-12 col-lg-3 text-center services-card-height mt-5 mt-lg-3">
   <div class="cardCont">
@@ -312,8 +333,11 @@
 </div> <!-- koniec row-->
 </article> <!-- koniec sekcji usługi-->
 <article style="background: rgba(0, 0, 0, 0.9);"> <!-- początek sekcji realizacji -->
-  <div class="row px-5 mt-lg-3"> <!-- początek row-->
-    <h1 class="mt-lg-3" style="margin-bottom: 0px; font-size: 3rem; color: white">Sprawdź nasze realizacje</h1>
+  <div class="row px-5 mt-lg-5"> <!-- początek row-->
+    <div class="col-12 mt-lg-4 mb-lg-2">
+    <h1 class="mt-lg-3" style="font-size: 2.5rem; color: white">SPRAWDŹ NASZE REALIZACJE</h1>
+    <hr style="margin: auto; width: 60%; border-bottom: 2px solid #938540; color: #938540; opacity: 1;">
+    </div> 
 <div class="col-6 col-lg-6 my-3">
   <a data-fslightbox="gallery" href="./media/img/carousel-4.jpg">
     <img class="w-100" src="./media/img/carousel-4.jpg">
@@ -347,6 +371,26 @@
 </div> <!-- koniec row-->
 </article> <!-- koniec sekcji realizacji-->
 
+<article> <!-- początek sekcji zainteresowany?-->
+<div class="row py-lg-5">
+<div class="col-12 col-lg-7" id="interested-col-img">
+<h3 style="color: white; text-shadow: 2px 1px 1px black">Chętnie zrealizujemy<BR> <b style="color: #938540; text-shadow: 3px 2px 1px black">WASZ</b> projekt</h3>
+</div>
+<div class="col-12 col-lg-5">
+  <div class="col-12 mt-lg-5 px-lg-5">
+    <h2>Porozmawiajmy</h2>
+    <hr class="mb-lg-4" style="margin: auto; width: 60%; border-bottom: 2px solid #938540; color: #938540; opacity: 1;">
+    <p>Daj nam znać o swoim projekcie, a my zajmiemy się resztą. Chętnie odpowiemy na Twoje pytania i pomożemy Ci wybrać najlepsze rozwiązanie.</p>
+    <a id="main-a" href="#">
+      <div class="col-12 mt-lg-5">
+        <span class="interested-span">Skontaktuj się z nami</span>
+      </div>
+    </a>
+  </div>
+</div>
+</div> <!-- koniec row-->
+</article> <!-- koniec sekcji zainteresowany-->
+
 <footer> <!-- Początek footer-->
 <div class="row"> <!-- Początek row footer-->
 <div class="col-12 col-lg-4 pt-5">
@@ -362,9 +406,11 @@
 </div>
 <div class="col-12 col-lg-4 pt-5">
   <p class="pFooterBrand">Kontakt</p>
-  <p>Adres</p>
-  <p>Mail</p>
-  <p>Telefon</p>
+  <div class="text-center text-lg-start col-12 col-lg-6 offset-lg-3">
+  <p><img class="footer-icons" src="./media/icons/footer-localization.svg">Adres</p>
+  <p><img class="footer-icons" src="./media/icons/footer-email.svg">Mail</p>
+  <p><img class="footer-icons" src="./media/icons/footer-phone.svg">Telefon</p>
+  </div>
 </div>
 <div class="col-12 pt-3" style="border-top: 1px solid gray">
   <p class="pFooterCopy">
