@@ -15,6 +15,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 body {
     background: #e6dce8;
     font-family: 'czcionka', sans-serif;
@@ -525,7 +529,7 @@ nav {
 .index-about-us {
    /*background-color: rgba(211, 211, 211, 0.39);
     tego kolorku chyba nie użyjemy */
-    height: 530px;
+    min-height: 530px;
     box-shadow: 3px 3px 10px black;
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.9);
