@@ -499,6 +499,12 @@ nav {
     display: flex;
     background-size: 100% 100%;
 }
+@media screen and (min-width: 1px) and (max-width: 991px) {
+    #interested-col-img {
+        height: calc(50px + 20vw + 15vh);
+    }
+}
+
 .interested-span {
     /* przycisk sekcji interested*/
      background: #938540;
@@ -546,6 +552,17 @@ nav {
 #h4-about {
     font-size: calc(12px + 0.390625vw);
 }
+@media screen and (min-width: 1px) and (max-width: 991px) {
+    #h4-about {
+        font-size: calc(12px + 1vw);
+    }
+}
+@media screen and (min-width: 1px) and (max-width: 991px) {
+.h2-about {
+    font-size: calc(20px + 3vw);
+}
+}
+
 #index-row-1 {
 }
 #index-row-2 {
@@ -583,49 +600,49 @@ nav {
 #cardImg1 {
     background: url('../../media/img/laser-cut.jpg');
     background-size: cover;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.9);
     box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.5);
 }
 #cardImg2 {
     background: url('../../media/img/bending-metal.jpg');
     background-size: cover;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.9);
     box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.5);
 }
 #cardImg3 {
     background: url('../../media/img/mig-mag.jpg');
     background-size: cover;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.9);
     box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.5);
 }
 #cardImg4 {
     background: url('../../media/img/machining.jpg');
     background-size: cover;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.9);
     box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.5);
 }
 #cardImg5 {
     background: url('../../media/img/rolling.jpg');
     background-size: cover;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.9);
     box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.5);
 }
 #cardImg6 {
     background: url('../../media/img/powder-coating.jpeg');
     background-size: cover;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.9);
     box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.5);
 }
 #cardImg7 {
     background: url('../../media/img/hot-dip.jpg');
     background-size: cover;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.9);
     box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.5);
 }
 #cardImg8 {
     background: url('../../media/img/pipe-bending.jpg');
     background-size: cover;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.9);
     box-shadow: inset 0 0 0 100vmax rgba(0,0,0,.5);
 }
 .cardCont {
