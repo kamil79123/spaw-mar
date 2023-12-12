@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline();
 tl.fromTo(".img-fluid-v2",
     {
@@ -119,7 +120,7 @@ gsap.utils.toArray(".cardCont").forEach(function(card) {
 
 // Animacja number counter
 
-gsap.registerPlugin(ScrollTrigger);
+
 
 gsap.utils.toArray("section").forEach(section => {
   gsap.fromTo(section, {y: 100, opacity: 0}, {
@@ -147,9 +148,55 @@ gsap.from(".animCounter", {
     start: "100px 80%",
     end: "+=100",
     toggleActions: "play none none reverse",
-    markers: true
   }
 });
+
+// Animacja sekcji z miłości do stali
+
+let tl2 = gsap.timeline();
+tl2.fromTo(".about-img",
+    {
+        x: -1000
+    },
+    {
+        x: 0,
+        scrollTrigger: {
+          trigger: ".about-img",
+          start: "top 100%", // Adjust the start position as needed
+          end: "top center",
+          markers: true,
+          scrub: 1
+        }
+    }
+  );
+  tl2.fromTo("#text-holder-about-us",
+    {
+        x: 500
+    },
+    {
+        x: 0,
+        scrollTrigger: {
+          trigger: "#text-holder-about-us",
+          start: "top 100%", // Adjust the start position as needed
+          end: "top center",
+          scrub: 1
+        }
+    }
+  );
+  tl2.fromTo("#years-anim",
+  {
+      x: 500
+  },
+  {
+      x: 0,
+      scrollTrigger: {
+        trigger: "#text-holder-about-us",
+        start: "top 100%", // Adjust the start position as needed
+        end: "top center",
+        scrub: 1
+      }
+  }
+);
 
 
 
