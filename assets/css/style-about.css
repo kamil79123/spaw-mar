@@ -1,0 +1,7 @@
+#about-init-img {
+    background: url('../../media/img/about-us/main.jpg');
+    height: 100svh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

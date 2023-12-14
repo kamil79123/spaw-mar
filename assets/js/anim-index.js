@@ -152,52 +152,74 @@ gsap.from(".animCounter", {
 });
 
 // Animacja sekcji z miłości do stali
-
-let tl2 = gsap.timeline();
-tl2.fromTo(".about-img",
-    {
-        x: -1000
-    },
-    {
-        x: 0,
-        scrollTrigger: {
-          trigger: ".about-img",
-          start: "top 100%", // Adjust the start position as needed
-          end: "top center",
-          markers: true,
-          scrub: 1
-        }
-    }
-  );
-  tl2.fromTo("#text-holder-about-us",
-    {
-        x: 500
-    },
-    {
-        x: 0,
-        scrollTrigger: {
-          trigger: "#text-holder-about-us",
-          start: "top 100%", // Adjust the start position as needed
-          end: "top center",
-          scrub: 1
-        }
-    }
-  );
-  tl2.fromTo("#years-anim",
-  {
-      x: 500
-  },
-  {
-      x: 0,
-      scrollTrigger: {
-        trigger: "#text-holder-about-us",
-        start: "top 100%", // Adjust the start position as needed
-        end: "top center",
-        scrub: 1
-      }
+gsap.set(".about-img", {x: "-150%"});
+gsap.to(".about-img", {
+  x: 0,
+  duration: 1,
+  ease: "power2.inOut",
+  scrollTrigger: {
+    trigger: ".about-img",
+    start: "top center",
+    end: "bottom center",
+    toggleActions: "play none none reverse"
   }
+}
 );
+gsap.set("#years-anim", {x: "100%"});
+gsap.to("#years-anim", {
+  x: 0,
+  duration: 1,
+  ease: "power2.inOut",
+  scrollTrigger: {
+    trigger: ".about-img",
+    start: "top center",
+    end: "bottom center",
+    toggleActions: "play none none reverse"
+  }
+})
 
+gsap.set(".index-about-us", {x: "150%"});
+gsap.to(".index-about-us", {
+  x: 0,
+  duration: 1,
+  ease: "power2.inOut",
+  scrollTrigger: {
+    trigger: ".about-img",
+    start: "top center",
+    end: "bottom center",
+    toggleActions: "play none none reverse"
+  }
+})
+
+
+
+
+gsap.set("#index-row-2", { x: "-100%" });
+gsap.to("#index-row-2", {
+  x: 0, // Przesunięcie w osi x o 300 pikseli
+  duration: 1, // Czas trwania animacji
+  ease: "power2.inOut", // Easing funkcja
+  scrollTrigger: {
+    trigger: "#index-row-2", // Obiekt, który wywołuje ScrollTrigger
+    start: "top center", // Początek animacji - gdy górna krawędź obiektu dojdzie do środka widoku
+    end: "bottom center", // Koniec animacji - gdy dolna krawędź obiektu dojdzie do środka widoku
+    markers: true,
+    toggleActions: "play none none reverse" // Dodatkowe znaczniki wizualne dla debugowania
+  }
+});
+gsap.set(".services-card-height", {rotationX: -180});
+gsap.to(".services-card-height", {
+  rotationX: 0, // Przesunięcie w osi x o 300 pikseli
+  duration: 2, // Czas trwania animacji
+  ease: "power2.inOut", // Easing funkcja
+  scrollTrigger: {
+    trigger: "#cardImg1", // Obiekt, który wywołuje ScrollTrigger
+    start: "top center", // Początek animacji - gdy górna krawędź obiektu dojdzie do środka widoku
+    end: "bottom center", // Koniec animacji - gdy dolna krawędź obiektu dojdzie do środka widoku
+    markers: true,
+    toggleActions: "play none none reverse" // Dodatkowe znaczniki wizualne dla debugowania
+  }
+});
 
 
 function formatNumber(value, decimals) {
