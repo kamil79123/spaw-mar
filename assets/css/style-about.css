@@ -54,3 +54,17 @@ background: #407c93;
 .about-us-arrow-down { /* styl strzalki w dol */
     width: 4rem;
 }
+
+.parallel-steps { /* prostopadlosciany */
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    transform: skew(7deg);
+    
+}
+.unskew {
+    transform: skew(-7deg)
+}
+.p-step { /*krok*/
+    font-weight: bold;
+    text-shadow: 2px 2px 5px gray;
+}
