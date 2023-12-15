@@ -1,7 +1,56 @@
 #about-init-img {
     background: url('../../media/img/about-us/main.jpg');
     height: 100svh;
+    background-position: center;
     align-items: center;
     justify-content: center;
     display: flex;
+}
+#about-values { /* cechy w about */
+background: #407c93;
+}
+#about-values2 { /* cechy w about */
+    background: #407c93;
+    }
+.accordion-button { /* wyśrodkowanie przycisku */
+    display: block !important;
+}
+#values-button1 {
+}
+.values-button1 {
+    background: #407c93 !important;
+    transition: .5s all ease;
+    color: white !important;
+}
+.values-button2 {
+    background: #934075 !important;
+    transition: .5s all ease;
+    color: white !important;
+}
+.values-button3 {
+    background: #938540 !important;
+    transition: .5s all ease;
+    color: white !important;
+}
+.accordion-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.accordion-button {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.accordion-body {
+    background: rgba(0, 0, 0, 0.6);
+}
+#about-row1 { /* row z wartosciami */
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+.accordion-item, .accordion-button  {
+    border-radius: 0 !important;
+  }
+
+.about-us-arrow-down { /* styl strzalki w dol */
+    width: 4rem;
 }
