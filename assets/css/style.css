@@ -15,6 +15,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+@media screen and (min-width: 992px) {
+.navbar-link-active { /*aktywny link */
+    border-bottom: 4px solid #938540;
+}
+}
 article {
     padding: 0px !important;
 }
@@ -22,6 +27,27 @@ article {
     margin-left: 0px;
     margin-right: 0px;
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #938540;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #938540;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 1px;
+    border: 1px ridge #313030;
+  }
 body {
     background: #e6dce8;
     font-family: 'czcionka', sans-serif;
@@ -259,6 +285,7 @@ nav {
 /* sekcja karuzela */
 .carousel-inner {
     height: 100vh !important;
+    box-shadow: 0px 5px black;
 }
 .carousel-item {
     height: 100%;

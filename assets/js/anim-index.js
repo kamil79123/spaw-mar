@@ -210,7 +210,7 @@ gsap.to("#index-row-2", {
 gsap.set(".services-card-height", {rotationX: -180});
 gsap.to(".services-card-height", {
   rotationX: 0, // Przesunięcie w osi x o 300 pikseli
-  duration: 2, // Czas trwania animacji
+  duration: 1, // Czas trwania animacji
   ease: "power2.inOut", // Easing funkcja
   scrollTrigger: {
     trigger: "#cardImg1", // Obiekt, który wywołuje ScrollTrigger
