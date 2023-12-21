@@ -429,7 +429,7 @@ nav {
 }
 @media screen and (min-width: 1300px) and (max-width: 1599px) {
     .dp-row {
-        margin-top: 15%;
+        margin-top: 30%;
    }
 }
 @media screen and (min-width: 992px) and (max-width: 1299px) {
