@@ -91,7 +91,7 @@
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button text-center values-button1" id="values-button1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="accordion-button text-center button-values values-button1" id="values-button1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   Uczcziwość
                 </button>
               </h2>
@@ -103,7 +103,7 @@
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed text-center" id="values-button2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="accordion-button collapsed text-center button-values" id="values-button2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Solidność
                 </button>
               </h2>
@@ -115,7 +115,7 @@
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="text-center accordion-button collapsed" id="values-button3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="text-center accordion-button collapsed button-values" id="values-button3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   Terminowość
                 </button>
               </h2>
@@ -365,21 +365,25 @@
 </div> <!-- koniec row-->
 </article>
 
-<article> <!-- poczatek article czekamy na ciebie-->
-  <div class="row"> <!-- row-->
+<article style="background: white"> <!-- poczatek article czekamy na ciebie-->
+  <div class="row py-5" style="background: rgba(0,0,0,0.2);"> <!-- row-->
     <div class="col-12 my-5">
       <h1>CZEKAMY NA CIEBIE</h1>
+      <hr class="mb-4" style="margin: auto; width: calc(20vw + 25vh); border-bottom: 2px solid #938540; color: #938540; opacity: 1;">
     </div>
     <div class="col-6 d-none d-lg-block px-0" style="border: 1px solid gray;">
 <img class="h-100 w-100" src="./media/img/about-us/contact-us.png">
     </div>
     <div class="col-12 col-lg-6">
       <div class="row">
+        <div class="col-12" style="height: 5rem">
+        <p style="font-size: 1.4rem;">Szukasz jakościowego i przystępnego cenowo projektu?</p>
+        </div>
         <div class="col-12">
           <div class="row my-2">
           <div class="col-4 offset-4 col-lg-2 offset-lg-1" id="about-email-holder">
             <a title="Napisz do nas" style="width: 7rem; height: 7rem; position: absolute" href="mailto:xyz@xyz.pl"></a>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.25 32"><defs><style>.cls-1{fill:none;stroke:#e6dce8;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title>Asset 16</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><rect class="cls-1" x="1" y="1" width="45.25" height="30" rx="1"></rect><path class="cls-1" d="M46.25,2l-22,17.78a1,1,0,0,1-1.29,0L1,2"></path><line class="cls-1" x1="45.5" y1="31" x2="28.95" y2="16"></line><line class="cls-1" x1="2" y1="31" x2="18" y2="16.5"></line></g></g></svg>
+            <svg class="svg-contact-about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.25 32"><defs><style>.cls-1{fill:none;stroke:#e6dce8;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title>Asset 16</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_2-2" data-name="Layer 2"><rect class="cls-1" x="1" y="1" width="45.25" height="30" rx="1"></rect><path class="cls-1" d="M46.25,2l-22,17.78a1,1,0,0,1-1.29,0L1,2"></path><line class="cls-1" x1="45.5" y1="31" x2="28.95" y2="16"></line><line class="cls-1" x1="2" y1="31" x2="18" y2="16.5"></line></g></g></svg>
           </div>
           <div class="col-12 col-lg-8 ms-lg-2 py-4" id="about-text-email-holder">
             <p class="header-p-cta">Napisz do nas e-mail na adres:</p>
@@ -391,7 +395,7 @@
           <div class="row my-2">
             <div class="col-4 offset-4 col-lg-2 offset-lg-1" id="about-phone-holder">
               <a title="Zadzwoń do nas" style="width: 7rem; height: 7rem; position: absolute" href="tel:123-456-789"></a>
-              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+              <svg version="1.1" class="svg-contact-about" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                 <g>
                   <g>
                     <path d="M377,0H135C60.561,0,0,60.561,0,135v30c0,24.813,20.187,45,45,45h60c24.813,0,45-20.187,45-45v-30c0-8.271,6.729-15,15-15
@@ -466,6 +470,54 @@
     </div>
   </div> <!-- koniec row-->
 </article>
+
+<article> <!-- początek article faq -->
+<div class="row py-5"> <!-- początek row faq-->
+  <div class="col-12">
+    <h1>Odpowiedzi na najczęściej zadawane pytania</h1>
+  </div>
+<div class="col-12 col-lg-6 offset-lg-3">
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button button-faq" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          Pytanie 1
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="show accordion-collapse-faq collapse">
+        <div class="accordion-body">
+          Odpowiedź 1
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed button-faq" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          Pytanie 2
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse-faq collapse">
+        <div class="accordion-body">
+          Odpowiedź 2
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed button-faq" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+         Pytanie 3
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse-faq collapse">
+        <div class="accordion-body">
+          Odpowiedź 3
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div> <!-- koniec row faq-->
+</article> <!-- koniec article faq-->
 
 
 

@@ -194,19 +194,21 @@ gsap.to(".index-about-us", {
 
 
 
-gsap.set("#index-row-2", { x: "-100%" });
+gsap.set("#index-row-2", { opacity: "0" });
 gsap.to("#index-row-2", {
-  x: 0, // Przesunięcie w osi x o 300 pikseli
+  opacity: 1, // Przesunięcie w osi x o 300 pikseli
   duration: 1, // Czas trwania animacji
   ease: "power2.inOut", // Easing funkcja
   scrollTrigger: {
     trigger: "#index-row-2", // Obiekt, który wywołuje ScrollTrigger
     start: "top center", // Początek animacji - gdy górna krawędź obiektu dojdzie do środka widoku
     end: "bottom center", // Koniec animacji - gdy dolna krawędź obiektu dojdzie do środka widoku
-    markers: true,
     toggleActions: "play none none reverse" // Dodatkowe znaczniki wizualne dla debugowania
   }
 });
+
+/* sekcja kart 
+
 gsap.set(".services-card-height", {rotationX: -180});
 gsap.to(".services-card-height", {
   rotationX: 0, // Przesunięcie w osi x o 300 pikseli
@@ -220,6 +222,7 @@ gsap.to(".services-card-height", {
     toggleActions: "play none none reverse" // Dodatkowe znaczniki wizualne dla debugowania
   }
 });
+*/
 
 
 function formatNumber(value, decimals) {

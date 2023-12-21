@@ -15,6 +15,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1, h2 {
+    font-weight: bold;
+}
 @media screen and (min-width: 992px) {
 .navbar-link-active { /*aktywny link */
     border-bottom: 4px solid #938540;
@@ -265,9 +268,15 @@ a {
 @media screen and (max-width: 991px) {
    /* biala linia rozdzielajaca w collapsed nav */
     .nav-item:first-child {
-        border-top: 1px solid white;
+        border-top: 4px solid #938540;
    }
 }
+@media screen and (max-width: 991px) {
+    /* biala linia rozdzielajaca w collapsed nav */
+     .nav-item:last-child {
+         border-bottom: 4px solid #938540;
+    }
+ }
 #navbar-div {
 }
 /* div z nav */

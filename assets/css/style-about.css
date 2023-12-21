@@ -18,7 +18,7 @@ background: #407c93;
 #about-values2 { /* cechy w about */
     background: #407c93;
     }
-.accordion-button { /* wyśrodkowanie przycisku */
+.button-values { /* wyśrodkowanie przycisku */
     display: block !important;
 }
 #values-button1 {
@@ -118,18 +118,33 @@ background: #407c93;
     background: rgba(45, 94, 103, 0.15);
     border: 5px solid #2d5e67;
     border-radius: 50px;
+    height: 7rem !important;
 }
 #about-text-phone-holder {
     background: rgba(103, 45, 82, 0.15);
     box-shadow: 10px 10px 25px #672d52;
     border: 5px solid #672d52;
     border-radius: 50px;
+    height: 7rem !important;
+}
+.svg-contact-about {
+    width: 5rem;
+    height: 5rem;
 }
 .header-p-cta {
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: bold;  
+    margin-bottom: 0px !important;
 }
 .p-cta {
     font-weight: bold;
     font-size: 1.5rem;
+}
+.button-faq {
+    background: #938540 !important;
+    color: black !important;
+    font-weight: bold;
+}
+.accordion-button:not(.collapsed)::after { /* zmiana koloru strzalki */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
