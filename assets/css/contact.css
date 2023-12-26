@@ -1,0 +1,19 @@
+.contact-brand-img {
+    background: url("../../media/img/contact/contact.jpg");
+    height: 50svh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: end;
+    justify-content: left;
+    display: flex;
+    border-bottom: 5px solid black;
+}
+.contact-brand-p {
+    color: white;
+    font-size: 3rem;
+    border-bottom: 3px solid #938540;
+}
+.contact-icons {
+    width: 4rem;
+}
