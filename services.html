@@ -8,7 +8,7 @@
     <meta http-equiv="content-language" content="pl">
     <meta name="rating" content="general">
     <title>Spaw-Mar</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./assets/css/ext/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
     <link href="./assets/css/services.css" rel="stylesheet">
     <!-- <link href="./assets/css/locomotive-scroll.css" rel="stylesheet"> -->
@@ -17,7 +17,7 @@
     <div class="container-fluid text-center "> <!-- Główny container -->
       <header> <!-- Header dla semantyki -->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top"> <!-- Początek nawigacji-->
-        <div class="container-fluid" id="nav-container" style="background-color: black">
+        <div class="container-fluid" id="nav-container">
             <a class="navbar-brand ms-lg-5" href="index" title="Strona Główna">
             <img id="logo-png" src="./media/logo/logo2.png" alt="Logo">
         </a>
@@ -53,8 +53,8 @@
       </header>
 <main> <!-- Main dla semantyki-->
     <article>
-<div class="row mt-lg-5"> <!-- początek row-->
-  <div class="row p-0"> <!-- początek row -->
+<div class="row"> <!-- początek row-->
+  <div class="row p-0 mb-lg-5"> <!-- początek row -->
     <div class="col-12 p-0 services-brand-img">
       <div class="row">
         <div class="col-2 p-0 text-center">
@@ -64,34 +64,34 @@
           <div class="row">
               <div class="col-12 col-lg-8 offset-lg-2 col-xxl-6 offset-xxl-3 py-1">
                   <div class="row my-lg-2">
-                      <div class="col-3">
+                      <div class="col-6 col-lg-3 px-2 px-lg-0 my-2 my-lg-0">
                       <button class="services-button services-button-active">Cięcie laserem</button>
                   </div>
-                  <div class="col-3">
+                  <div class="col-6 col-lg-3 px-2 px-lg-0 my-2 my-lg-0">
                       <button class="services-button">Cięcie laserem</button>
                   </div>
-                  <div class="col-3">
+                  <div class="col-6 col-lg-3 px-2 px-lg-0 my-2 my-lg-0">
                       <button class="services-button">Cięcie laserem</button>
                   </div>
-                  <div class="col-3">
+                  <div class="col-6 col-lg-3 px-2 px-lg-0 my-2 my-lg-0">
                       <button class="services-button">Cięcie laserem</button>
                   </div>
                   </div>
                   </div>
-                  <div class="col-12 col-lg-8 offset-lg-2 col-xxl-6 offset-xxl-3">
+                  <div class="col-12 col-lg-8 offset-lg-2 col-xxl-6 offset-xxl-3 py-1">
                       <div class="row">
-                      <div class="col-3">
-                          <button class="services-button">Cięcie laserem</button>
+                        <div class="col-6 col-lg-3 px-2 px-lg-0 my-2 my-lg-0">
+                          <button class="services-button services-button-2">Cięcie laserem</button>
                       </div>
-                      <div class="col-3">
-                          <button class="services-button">Cięcie laserem</button>
-                      </div>
-                      <div class="col-3">
-                          <button class="services-button">Cięcie laserem</button>
-                      </div>
-                      <div class="col-3">
-                          <button class="services-button">Cięcie laserem</button>
-                      </div>
+                      <div class="col-6 col-lg-3 px-2 px-lg-0 my-2 my-lg-0">
+                        <button class="services-button services-button-2">Cięcie laserem</button>
+                    </div>
+                    <div class="col-6 col-lg-3 px-2 px-lg-0 my-2 my-lg-0">
+                      <button class="services-button services-button-2">Cięcie laserem</button>
+                  </div>
+                  <div class="col-6 col-lg-3 px-2 px-lg-0 my-2 my-lg-0">
+                    <button class="services-button services-button-2">Cięcie laserem</button>
+                </div>
                       </div>
               </div>
           </div>
@@ -100,6 +100,8 @@
     </div>
     
 </div> <!-- koniec row-->
+
+<!-- stare przyciski
     <div class="col-12 services-button-container py-3">
         <div class="row">
             <div class="col-12 col-lg-8 offset-lg-2 col-xxl-6 offset-xxl-3 py-1">
@@ -136,26 +138,60 @@
             </div>
         </div>
     </div>
+  -->
 
-<div class="col-5 offset-6 mt-4 services-product-title">
-    <p style="font-size: 2rem; margin-bottom: 0"><strong>Cięcie laserem</strong></p>
+
+<div class="col-12 col-lg-5 offset-lg-1">
+
+  <div class="row">
+    <div class="col-12">
+      <img class="w-100 services-img" src="./media/img/laser-cut.jpg">
+  </div>
+
 </div>
-<div class="col-5 offset-1">
-    <img class="w-100 h-100 services-img" src="./media/img/laser-cut.jpg">
 </div>
-<div class="col-5 p-3 services-product-facts">
-    <p><strong>Precyzja:</strong> Laserowe cięcie metali to zaawansowana technologia oferująca niezrównaną precyzję, umożliwiając dokładne cięcie nawet najmniejszych detali.</p>
-
-    <p><strong>Bezkontaktowość:</strong> Proces ten jest bezkontaktowy, eliminując zużycie narzędzi i przekłada się na niższe koszty utrzymania.</p>
-
-    <p><strong>Szybkość:</strong> Laserowe cięcie jest znacznie szybsze niż tradycyjne metody, co sprawia, że jest efektywne przy produkcji na dużą skalę.</p>
-
-    <p><strong>Niska strefa wpływu cieplnego:</strong> Minimalizuje deformacje i zmiany właściwości materiału dzięki generowaniu małej ilości ciepła.</p>
-
-    <p><strong>Powtarzalność:</strong> Proces ten gwarantuje wysoką powtarzalność wyników, co jest istotne przy produkcji seryjnej.</p>
-
-    <p><strong>Uniwersalność:</strong> Laserowe cięcie metali może być stosowane do cięcia różnych rodzajów metali, takich jak stal nierdzewna, aluminium czy miedź, co sprawia, że jest atrakcyjną opcją dla różnorodnych branż i zastosowań.</p>
+<div class="col-12 col-lg-5 p-4 services-product-facts">
+  <div class="row">
+    <div class="col-12">
+        <p style="font-size: 2rem; margin-bottom: 0; color: black"><strong>CIĘCIE LASEREM</strong></p>
+    </div>
+<div style="color: black" class="col-12 px-4 py-2">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna leo, aliquet nec venenatis quis, iaculis ac libero. Suspendisse potenti. Nunc sed bibendum nunc. Donec commodo bibendum risus vitae commodo. Aliquam tincidunt tellus ac lacinia eleifend. Vestibulum in blandit nisi. Integer turpis elit, commodo id facilisis suscipit, luctus id nibh.
 </div>
+  </div>
+  </div>
+  <div class="col-12 p-4 services-product-facts">
+    <div class="row">
+      <div class="col-4 my-1">
+        <div class="row">
+          <div class="col-12 services-product-facts-blocks">
+            
+            <p class="px-3 m-0"><span class="services-product-facts-blocks-p">Precyzja: </span><br> Laserowe cięcie metali to zaawansowana technologia oferująca niezrównaną precyzję, umożliwiając dokładne cięcie nawet najmniejszych detali.</p>
+              </div>
+          </div>
+        </div>
+
+  
+          <div class="col-4 my-1">
+            <div class="row">
+              <div class="col-12 services-product-facts-blocks">
+                
+                <p class="px-3 m-0"><span class="services-product-facts-blocks-p">Powtarzalność: </span><br> Proces ten gwarantuje wysoką powtarzalność wyników, co jest istotne przy produkcji seryjnej.</p>
+                      </div>
+              </div>
+            </div>
+
+  
+            <div class="col-4 my-1">
+              <div class="row">
+                <div class="col-12 services-product-facts-blocks">
+                  <p class="px-3 m-0"> <span class="services-product-facts-blocks-p">Uniwersalność </span><br>Laserowe cięcie metali może być stosowane do cięcia różnych rodzajów metali, takich jak stal nierdzewna, aluminium czy miedź, co sprawia, że jest atrakcyjną opcją dla różnorodnych branż i zastosowań.</p>
+                  </div>
+                </div>
+              </div>
+
+    </div>
+    </div>
 </div> <!-- koniec row-->
 </article> <!-- koniec article-->
 
@@ -163,7 +199,7 @@
     <div class="row my-5">
         <div class="col-8 offset-2">
             <h1>Co nas wyróżnia?</h1>
-            <hr class="mb-4" style="margin: auto; width: 60%; border-bottom: 2px solid #938540; color: #938540; opacity: 1;">
+            <hr class="mb-4" style="margin: auto; width: 60%; border-bottom: 2px solid #2d5e67; color: #2d5e67; opacity: 1;">
         </div>
         <div class="col-8 offset-2">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet dolor at mi interdum, a dapibus massa consectetur. Vestibulum in hendrerit sapien. Suspendisse a rhoncus mauris, eu ultrices justo. Aenean ac malesuada lorem, vitae gravida leo. Quisque molestie justo a ex ultricies mollis. Aliquam euismod semper nibh, at cursus justo bibendum gravida. Vestibulum vestibulum nisl vitae eros euismod mollis. Aenean mollis vestibulum mi eget facilisis. Sed pretium maximus tellus, at volutpat lacus viverra nec. Aliquam at quam vel augue malesuada blandit.
@@ -171,6 +207,26 @@
             Pellentesque vestibulum erat vel lectus facilisis volutpat. Maecenas at convallis erat, vel lobortis nisi. Sed non cursus quam. Ut in aliquet neque, vel aliquam eros. Sed et nibh imperdiet, accumsan quam eget, feugiat nunc. Ut at magna tincidunt, eleifend urna eget, volutpat turpis. Aliquam pellentesque nibh est, in malesuada risus euismod porttitor. Proin a massa elementum, pretium est dignissim, tristique mi. Nunc tortor mi, congue non libero vitae, imperdiet lobortis metus.
             
             Nulla facilisi. Curabitur lacinia elit vel neque bibendum, vel pretium nisl porttitor. Phasellus posuere neque a diam porttitor, eget molestie lacus egestas. Duis ultrices luctus lorem, ac commodo augue rhoncus accumsan. Aenean et neque convallis arcu imperdiet dapibus. Mauris pulvinar consequat augue aliquam tincidunt. Donec eleifend nisi condimentum, rhoncus velit sollicitudin, feugiat tellus. Aliquam erat volutpat. Fusce mollis tortor mauris, nec interdum magna sollicitudin id. Morbi venenatis ipsum dui, sed scelerisque arcu vestibulum ut.</p>
+        </div>
+        <div class="col-12 col-lg-8 offset-lg-2 my-5 px-0">
+          <h2>Korzystając z naszych usług masz pewność, że...</h2>
+          <div class="row flex-align-bottom mt-5">
+            <div class="col-12 col-lg-4 advantage-block-cont">
+              <div class="mx-lg-2 advantage-block" style="height: 100%; width: 100%">
+                Jesteśmy najlepsi
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 advantage-block-cont">
+              <div class="mx-lg-2 advantage-block" style="height: 100%; width: 100%">
+                Jesteśmy najlepsi
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 advantage-block-cont">
+              <div class="mx-lg-2 advantage-block" style="height: 100%; width: 100%">
+                Jesteśmy najlepsi
+                </div>
+            </div>
+          </div>
         </div>
     </div>
 </article>
@@ -216,10 +272,10 @@
 
 
     <!-- Skrypty -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/ext/gsap.3.12.3.min.js"></script>
+    <script src="./assets/js/ext/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/ext/jquery-3.7.1.js"></script>
+    <script src="./assets/js/ifscroll.js"></script>
     <script src="./assets/js/lightbox.js"></script>
     <script src="./assets/js/svg-color.js"></script>
     <!-- <script src="./assets/js/locomotive-scroll.min.js"></script>
@@ -231,6 +287,6 @@ window.onload = function() {
       }, 0);
     };
 </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./assets/js/ext/bootstrap.5.3.2.bundle.min.js"></script>
   </body>
 </html>
